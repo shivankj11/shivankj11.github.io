@@ -4,8 +4,9 @@ title: Contact
 permalink: /contact/
 ---
 
-
 <p style="text-align: center;">current work email: shivank (at) iseedvc (dot) com</p>
+<p style="text-align: center;">current location: SF</p>
+<p style="text-align: center;">schedule time for us to talk: <a href="https://cal.com/shiv-iseed">https://cal.com/shiv-iseed</a></p>
 <p style="text-align: center;">alternatively: see footer links which are unlikely to change</p>
 
 

@@ -1,31 +1,25 @@
 #
-# This file contains configuration flags to customize your site
+# This file contains configuration flags
 #
 
-# Name of your site (displayed in the header)
 name: Shivank
 
-# Name of the author
 author: Shivank Joshi
 
-# Short bio or description (displayed in the header)
 description: random walk
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /images/89424061.png
 
-#
 # Flags below are optional
-#
 
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
   facebook:
   flickr:
-  github: shivankj11
+  github: #shivankj11
   instagram:
-  linkedin: shivank-joshi
+  linkedin: #shivank-joshi
   pinterest:
   rss:
   twitter: sapling575
@@ -87,7 +81,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
-include: ['_pages']
+include: ['_pages', '_posts']
 
 paginate: 6
 paginate_path: /page:num/
@@ -99,4 +93,4 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
-
+  - _site
