@@ -14,6 +14,14 @@
       "url"      : "/realtime-postflop/",
       "category" : "Code, Poker",
       "date"     : "February 24, 2025"
+    } ,
+  
+    {
+
+      "title"    : "Advent of Code 2024",
+      "url"      : "/aoc-2024/",
+      "category" : "Code",
+      "date"     : "January  1, 2025"
     } 
   
 ]

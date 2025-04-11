@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://localhost:4000/aoc-2024/</loc>
+<lastmod>2025-01-01T00:00:00-08:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/realtime-postflop/</loc>
 <lastmod>2025-02-24T00:00:00-08:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/startups/</loc>
 <lastmod>2025-03-01T00:00:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/_posts/2025-01-01-aoc-2024/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/_posts/2025-02-24-realtime-postflop/</loc>
