@@ -48,7 +48,4 @@
 <url>
 <loc>http://localhost:4000/search/</loc>
 </url>
-<url>
-<loc>http://localhost:4000/_pages/secret/</loc>
-</url>
 </urlset>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-01T17:28:48-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Shivank</title><subtitle>random walk</subtitle><author><name>Shivank Joshi</name></author><entry><title type="html">Are you a startup founder?</title><link href="http://localhost:4000/startups/" rel="alternate" type="text/html" title="Are you a startup founder?" /><published>2025-03-01T00:00:00-08:00</published><updated>2025-03-01T00:00:00-08:00</updated><id>http://localhost:4000/startups</id><content type="html" xml:base="http://localhost:4000/startups/"><![CDATA[<p>I am interested in connecting!</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-05T14:51:38-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Shivank</title><subtitle>random walk</subtitle><author><name>Shivank Joshi</name></author><entry><title type="html">Are you a startup founder?</title><link href="http://localhost:4000/startups/" rel="alternate" type="text/html" title="Are you a startup founder?" /><published>2025-03-01T00:00:00-08:00</published><updated>2025-03-01T00:00:00-08:00</updated><id>http://localhost:4000/startups</id><content type="html" xml:base="http://localhost:4000/startups/"><![CDATA[<p>I am interested in connecting!</p>
 
 <h3 style="text-align: left;"> What? </h3>
 
@@ -12,6 +12,7 @@ You. Particularly if you are focusing on:
 <ul>
     <li> Scaling real-world data</li>
     <li> Accelerating or improving world simulation</li>
+    <li> Efficient AI inference</li>
     <li> Infra for robotics development</li>
     <li> Something else very exciting</li>
 </ul>
