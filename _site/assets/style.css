@@ -85,7 +85,6 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1217,19 +1216,12 @@ Modules - reusable parts of our design
     transform: translateX(0);
   }
 }
-:root {
-  --bg: #282a36;
-  --text: #f8f8f2;
-  --link: #ADB5CB;
-  --link-hover: #bd93f9;
-}
-
 .light-mode {
   --bg: #f8f8f2;
   --text: #44475a;
   --link: #6272a4;
   --link-hover: #0056b3;
-  --footer-bg: #ADB5CB;
+  --footer-bg: #D3D7DF;
   --caption-text: #9EA0A6;
 }
 

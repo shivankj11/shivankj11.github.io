@@ -72,10 +72,10 @@
 
       <div class="wrapper-main">
         <div id="main" role="main" class="container">
-          <img id="bmotion-img" src="/images/bmotion_light.png" class="center-image" style="width: 90%;"/>
+          <img id="bmotion-img" class="center-image" />
 
-<p><em>Note: views expressed are solely my own and do not reflect the views or opinions of my employer</em></p>
-<p><em>Note: views expressed do not necessarily reflect my own views either</em></p>
+<p style="color : var(--caption-text);"><em>Note: views expressed are solely my own and do not reflect the views or opinions of my employer</em></p>
+<p style="color : var(--caption-text);"><em>Note: views expressed do not necessarily reflect <a style="color: var(--caption-text) ! important;" rel="nofollow" href="/secret">my own views</a> either</em></p>
 
 <!-- 
 <article class="post">
@@ -248,13 +248,13 @@
           root.classList.remove('dark-mode');
           themeIcon.textContent = '⏾';
           // Switch bmotion image to light mode
-          if (bmotionImg) bmotionImg.src = '/images/bmotion_light.png';
+          if (bmotionImg) bmotionImg.src = '/images/random_walk.png';
         } else {
           root.classList.add('dark-mode');
           root.classList.remove('light-mode');
           themeIcon.textContent = '𖤓';
           // Switch bmotion image to dark mode
-          if (bmotionImg) bmotionImg.src = '/images/bmotion_dark.jpg';
+          if (bmotionImg) bmotionImg.src = '/images/random_walk.png';
         }
       }
       // Check saved preference
