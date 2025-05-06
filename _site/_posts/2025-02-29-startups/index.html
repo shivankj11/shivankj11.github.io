@@ -43,7 +43,6 @@
     <link rel="alternate" type="application/rss+xml" title="Shivank - random walk" href="/feed.xml" />
     <link rel="canonical" href="http://localhost:4000/_posts/2025-02-29-startups/" />
 
-    <meta name="theme-color" content="#000000">
     <link rel="icon" type="image/png" sizes="20x20" href="https://avatars.githubusercontent.com/u/89424061?v=4">
     
 
@@ -51,6 +50,7 @@
 
   <body>
     <div id="bar"></div>
+    
     <div class="wrapper-container">
       <div class="wrapper-masthead">
         <div class="container">
@@ -65,6 +65,9 @@
             <nav>
               <a href="/contact">Contact</a>
               <a href="/search">Search</a>
+              <button class="theme-toggle-btn" id="theme-toggle" title="Toggle dark/light mode">
+                <span id="theme-icon">light</span>
+              </button>
             </nav>
           </header>
         </div>
@@ -160,6 +163,42 @@ You. Particularly if you are focusing on:
         </div>
       </div>
     </div>
+
+    <script>
+      // Theme toggle logic
+      const toggleBtn = document.getElementById('theme-toggle');
+      const themeIcon = document.getElementById('theme-icon');
+      const root = document.documentElement;
+      function setTheme(mode) {
+        const bmotionImg = document.getElementById('bmotion-img');
+        if (mode === 'light') {
+          root.classList.add('light-mode');
+          root.classList.remove('dark-mode');
+          themeIcon.textContent = '⏾';
+          // Switch bmotion image to light mode
+          if (bmotionImg) bmotionImg.src = '/images/bmotion_light.png';
+        } else {
+          root.classList.add('dark-mode');
+          root.classList.remove('light-mode');
+          themeIcon.textContent = '𖤓';
+          // Switch bmotion image to dark mode
+          if (bmotionImg) bmotionImg.src = '/images/bmotion_dark.jpg';
+        }
+      }
+      // Check saved preference
+      const savedTheme = localStorage.getItem('theme-mode');
+      if (savedTheme) {
+        setTheme(savedTheme);
+      } else {
+        // Use system preference as default
+        setTheme(window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      }
+      toggleBtn.onclick = function() {
+        const isLight = root.classList.contains('light-mode');
+        setTheme(isLight ? 'dark' : 'light');
+        localStorage.setItem('theme-mode', isLight ? 'dark' : 'light');
+      };
+    </script>
 
     
 

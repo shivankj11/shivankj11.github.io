@@ -9,13 +9,13 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
 
-    <meta name="theme-color" content="#000000">
     <link rel="icon" type="image/png" sizes="20x20" href="https://avatars.githubusercontent.com/u/89424061?v=4">
     {% include analytics_head.html %}
   </head>
 
   <body>
     <div id="bar"></div>
+    
     <div class="wrapper-container">
       <div class="wrapper-masthead">
         <div class="container">
@@ -30,6 +30,9 @@
             <nav>
               <a href="{{ site.baseurl }}/contact">Contact</a>
               <a href="{{ site.baseurl }}/search">Search</a>
+              <button class="theme-toggle-btn" id="theme-toggle" title="Toggle dark/light mode">
+                <span id="theme-icon">light</span>
+              </button>
             </nav>
           </header>
         </div>
@@ -49,6 +52,42 @@
         </div>
       </div>
     </div>
+
+    <script>
+      // Theme toggle logic
+      const toggleBtn = document.getElementById('theme-toggle');
+      const themeIcon = document.getElementById('theme-icon');
+      const root = document.documentElement;
+      function setTheme(mode) {
+        const bmotionImg = document.getElementById('bmotion-img');
+        if (mode === 'light') {
+          root.classList.add('light-mode');
+          root.classList.remove('dark-mode');
+          themeIcon.textContent = '⏾';
+          // Switch bmotion image to light mode
+          if (bmotionImg) bmotionImg.src = '{{ site.baseurl }}/images/bmotion_light.png';
+        } else {
+          root.classList.add('dark-mode');
+          root.classList.remove('light-mode');
+          themeIcon.textContent = '𖤓';
+          // Switch bmotion image to dark mode
+          if (bmotionImg) bmotionImg.src = '{{ site.baseurl }}/images/bmotion_dark.jpg';
+        }
+      }
+      // Check saved preference
+      const savedTheme = localStorage.getItem('theme-mode');
+      if (savedTheme) {
+        setTheme(savedTheme);
+      } else {
+        // Use system preference as default
+        setTheme(window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      }
+      toggleBtn.onclick = function() {
+        const isLight = root.classList.contains('light-mode');
+        setTheme(isLight ? 'dark' : 'light');
+        localStorage.setItem('theme-mode', isLight ? 'dark' : 'light');
+      };
+    </script>
 
     {% include analytics.html %}
   </body>

@@ -21,9 +21,7 @@ html {
 }
 
 body {
-  background: #fff;
   font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #404040;
   line-height: 1.7;
   font-weight: 400;
   font-size: 18px;
@@ -37,9 +35,16 @@ body {
   width: 100%;
 }
 
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: $darkerGray;
+  color: var(--text);
   font-weight: bold;
 
   line-height: 1.7;
@@ -139,7 +144,7 @@ table tr td :last-child {
   text-align: center;
 }
 
-#search-input {
+#search-input, #search-input-mini{
   width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -151,9 +156,16 @@ table tr td :last-child {
   background-color: #dae4af;
 }
 
+#search-input-mini {
+  width: 55%;
+  border: 0px solid #bd93f9;
+  border-radius: 2px;
+  background-color: var(--footer-bg);
+}
+
 .share-box {
-  font-weight: bold;
-  color: #222;
+  font-weight: 600;
+  color: var(--text);
 }
 
 span[data-pullquote] {
@@ -177,11 +189,11 @@ span[data-pullquote]:before {
 }
 
 a {
-  color: $blue;
+  color: var(--link);
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: var(--link-hover);
   }
 }
 
@@ -265,12 +277,12 @@ p > img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid var(--caption-text);
 
   @include mobile {
     text-align: center;
@@ -282,6 +294,7 @@ p > img {
   width: 70px;
   height: 70px;
   margin-right: 15px;
+  margin-bottom: 0px;
 
   @include mobile {
     float: none;
@@ -309,7 +322,7 @@ p > img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: var(--text);
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
@@ -324,7 +337,7 @@ p > img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: var(--caption-text);
   font-size: 16px;
 
   @include mobile {
@@ -334,9 +347,9 @@ p > img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  margin-top: 25px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
-  font-size: 18px;
+  font-size: 20px;
 
   @include mobile {
     float: none;
@@ -347,16 +360,34 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: var(--text);
     text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+    font-weight: 320;
+    letter-spacing: 0.5px;
 
     @include mobile {
       margin: 0 10px;
       color: $blue;
     }
   }
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.15em;
+  margin-left: 20px;
+  color: var(--link);
+  padding: 0 7px;
+  vertical-align: middle;
+  display: inline;
+  transition: color 0.2s;
+}
+
+.theme-toggle-btn:hover, .theme-toggle-btn:focus {
+  color: var(--link-hover);
+  outline: none;
 }
 
 //
@@ -418,7 +449,7 @@ nav {
   bottom: 0;
   width: 100%;
   height: 89px;
-  background-color: $lightGray;
+  background-color: var(--footer-bg);
 }
 
 footer {
@@ -703,9 +734,8 @@ Modules - reusable parts of our design
   font-size: 14.5px;
   padding: 2px 13px;
   border: none;
-  background-color: #4CAF50;
+  background-color: var(--footer-bg);
   border-radius: 50px;
-  color: #fff;
 }
 
 .pagination a, .pagination span {
@@ -797,7 +827,7 @@ Modules - reusable parts of our design
 .btn-subscribe {
   line-height: 20px;
   text-decoration: none;
-  background: #00000015;
+  background: #F8F8F2;
   border: none;
   font-size: 12px;
   padding: 0px 7px;
@@ -810,7 +840,7 @@ Modules - reusable parts of our design
 }
 
 .btn-subscribe:hover {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .btn-subscribe > svg {
@@ -1139,6 +1169,40 @@ Modules - reusable parts of our design
   }
 }
 
+// Theme mode styles
+:root {
+  --bg: #282a36;
+  --text: #f8f8f2;
+  --link: #ADB5CB;
+  --link-hover: #bd93f9;
+}
+.light-mode {
+  --bg: #f8f8f2;
+  --text: #44475a;
+  --link: #6272a4;
+  --link-hover: #0056b3;
+  --footer-bg: #ADB5CB;
+  --caption-text: #9EA0A6;
+}
+.dark-mode {
+  --bg: #282a36;
+  --text: #f8f8f2;
+  --link: #ADB5CB;
+  --link-hover: #bd93f9;
+  --footer-bg: #44475a;
+  --caption-text: #888A93;
+}
+
+body, html {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+a {
+  color: var(--link) !important;
+  &:hover, &:active {
+    color: var(--link-hover) !important;
+  }
+}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
