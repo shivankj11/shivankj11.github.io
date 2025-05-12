@@ -46,6 +46,13 @@
 <loc>http://localhost:4000/info</loc>
 </url>
 <url>
+<loc>http://localhost:4000/portfolio</loc>
+</url>
+<url>
 <loc>http://localhost:4000/search/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/assets/Shivank_Joshi_Resume.pdf</loc>
+<lastmod>2025-05-12T14:09:22-07:00</lastmod>
 </url>
 </urlset>
