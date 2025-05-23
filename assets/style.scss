@@ -549,10 +549,9 @@ Zetamac-Voice
 -------------------------------- */
 
 #zm-welcome {
-  width: 650px;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  zoom: 1;
 }
 
 #zm-welcome input[type="text"] {
@@ -567,6 +566,7 @@ Zetamac-Voice
 #zm-welcome input[type="submit"] {
   float: right;
   font-size: 16px;
+  border: 1px solid var(--link-hover);
 }
 
 #game {
@@ -609,7 +609,7 @@ Zetamac-Voice
 #game .banner input {
   font-size: 36px;
   font-family: inherit;
-  width: 180px;
+  width: 23%;
 }
 
 dd {
