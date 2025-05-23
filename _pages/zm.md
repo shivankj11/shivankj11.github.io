@@ -6,14 +6,14 @@ permalink: /zm
 
 <html>
   <body>
-    <h1 style='margin-top: 50px; margin-bottom: 0px;'>
-        <button style='margin-right: 28px;' class="theme-toggle-btn" id="home-btn" title="Home" onclick="window.location.href='/'">❮❮</button>
+    <h1 style='margin-top: 50px; margin-bottom: 0px; width: 100%;'>
+        <button style='margin-right: 24px;' class="theme-toggle-btn" id="home-btn" title="Home" onclick="window.location.href='/'">❮❮</button>
         Zetamac-Voice
-        <button class="theme-toggle-btn" id="theme-toggle" title="Toggle dark/light mode">
+        <button style='margin-left: 24px;' class="theme-toggle-btn" id="theme-toggle" title="Toggle dark/light mode">
             <span id="theme-icon">light</span>
         </button>
     </h1>
-    <hr style='margin-bottom: 10px;'/>
+    <hr style='width: 100%; margin-bottom: 10px;'/>
     <div id='zm-welcome'>
       <p>The Arithmetic Game is a fast-paced speed drill where you are given two minutes to solve as many arithmetic problems as you can.</p>
       <p><a href="https://arithmetic.zetamac.com">Link to Zetamac</a>  |  <a href="/assets/zetamac_high_score.png">High Score</a></p>
@@ -60,7 +60,10 @@ permalink: /zm
             <option value='600'>600 seconds</option>
           </select>
         </p>
-        <input type='submit' value='Start'>
+        <div class='button-row'>
+          <input type='submit' id='start-audio' value='Start Audio'>
+          <input type='submit' id='start' value='Start'>
+        </div>
       </form>
     </div>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>

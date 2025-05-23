@@ -549,15 +549,14 @@ Zetamac-Voice
 -------------------------------- */
 
 #zm-welcome {
-  width: 650px;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  zoom: 1;
 }
 
 #zm-welcome input[type="text"] {
   text-align: right;
-  width: 5%;
+  width: 6%;
   margin: 0px 1px;
   float: center;
   border-color: var(--link-hover);
