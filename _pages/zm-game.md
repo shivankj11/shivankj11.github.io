@@ -4,7 +4,7 @@ title: Zetamac-Voice
 permalink: /zm-game
 ---
 
-<html>
+<html style='overflow: hidden;'>
   <body>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
     <script src='/zm-game.js'></script>

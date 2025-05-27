@@ -6,14 +6,18 @@ permalink: /zm
 
 <html>
   <body>
-    <h1 style='margin-top: 50px; margin-bottom: 0px; width: 100%;'>
-        <button style='margin-right: 24px;' class="theme-toggle-btn" id="home-btn" title="Home" onclick="window.location.href='/'">❮❮</button>
-        Zetamac-Voice
-        <button style='margin-left: 24px;' class="theme-toggle-btn" id="theme-toggle" title="Toggle dark/light mode">
-            <span id="theme-icon">light</span>
+    <div class='zm-header'>
+      <h1>
+        <button class="theme-toggle-btn" id="home-btn" title="Home" onclick="window.location.href='/'">
+          ❮❮
         </button>
-    </h1>
-    <hr style='width: 100%; margin-bottom: 10px;'/>
+        Zetamac-Voice
+        <button class="theme-toggle-btn" id="theme-toggle" title="Toggle dark/light mode">
+          <span id="theme-icon">light</span>
+        </button>
+      </h1>
+      <hr style='width: 100%; margin-bottom: 10px;'/>
+    </div>
     <div id='zm-welcome'>
       <p>The Arithmetic Game is a fast-paced speed drill where you are given two minutes to solve as many arithmetic problems as you can.</p>
       <p><a href="https://arithmetic.zetamac.com">Link to Zetamac</a>  |  <a href="/assets/zetamac_high_score.png">High Score</a></p>
