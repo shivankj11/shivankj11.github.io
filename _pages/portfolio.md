@@ -4,7 +4,7 @@ title: Portfolio
 permalink: /portfolio
 ---
 
-My background is mainly in applied optimization & machine learning. For the last year, I've been working at iSeed Ventures as an investor, focusing on AI infra and robotics. A few projects and some brief descriptions are listed below.
+My background is mainly in applied optimization & machine learning. For the last year, I've been working at iSeed Ventures as an investor, focusing on AI infra and robotics. A few past projects are summarized below.
 
 <hr/>
 <h2><a href="https://drive.google.com/file/d/1InCKqi4o_S4EDNaFgcBoinN9YbCesyfV/view?pli=1">Improving Alignment and Explainability for Predict-then-Optimize Portfolio Problem</a></h2>
